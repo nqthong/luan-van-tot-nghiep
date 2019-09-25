@@ -1,0 +1,16 @@
+{{#each jobs}}
+
+    <div class="title">
+        <a href="/search?ID={{_id}}" id="ctcv">
+            <h3>{{title}}</h3>
+            <p id="chu" >{{category2}}</p> <br>
+            <p id="chu">{{client.location.country}}</p><br>
+           
+            <p id="chu">{{createdOn}}</p> <br>
+            <p id="chu" style="color:#f75408;">{{amount.amount}}&nbsp;{{amount.currencyCode}}</p> <br>
+        
+        </a>
+    </div>
+{{/each}}
+
+

@@ -1,0 +1,29 @@
+
+<div class="search">
+    <form action="/tk" method="POST" >
+        <input id="tk" type="text" name="congviec" size="30"/>
+        <input type="submit" name="search" value="Search" id="bt_search"/>
+    </form>
+</div>
+
+{{#if jobs}}
+  
+{{#each jobs}}
+
+    <div class="title">
+        <a href="/search?ID={{_id}}" id="ctcv">
+            <h3>{{title}}</h3>
+            <p id="chu" >{{category2}}</p> <br>
+            <p id="chu">{{client.location.country}}</p><br>
+           
+            <p id="chu">{{createdOn}}</p> <br>
+            <p id="chu" style="color:#f75408;">{{amount.amount}}&nbsp;{{amount.currencyCode}}</p> <br>
+        
+        </a>
+    </div>
+{{/each}}
+{{else}}
+<center>
+<h1>No matching jobs found!</h1>
+</center>
+{{/if}}

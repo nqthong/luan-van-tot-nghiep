@@ -1,0 +1,125 @@
+/* CSS Document */ 	
+*{
+	padding:0;
+	margin:0;
+}
+.clr{
+	clear:both;
+}
+body{
+    font-display: Arial;
+	font-size: 18px;
+}
+.wrapper{
+	width:1024px;
+	height:auto;
+	border:1px solid #000;
+	margin:auto;
+}
+.top{
+	width: 100%;
+	height: 150px;
+	border: 1px solid #003;
+	background-color: #F0FFFF;
+}
+
+	#logo{
+		margin-top: 50px;
+		margin-left: 30px; 
+		margin-right: 30px;
+		float: left;
+	}
+
+	#ha{
+		width: 820px;
+		height: 150px;
+	}
+.category{
+	width:100%;
+	margin-top: 5px; 
+	height: 120px;
+}
+	.category ul{
+		width:100%;
+		height:40px;
+		list-style:none;/* Bo dau tich*/
+		margin-left:5px;
+		float: left;
+	}
+	.category ul li {
+		float:left;/*man cung dong*/
+		margin-left:0px; /*khoang cach cac chu*/
+		border:1px solid #000;
+		padding: 5px;
+		width: 240px;
+	}
+	.category ul li a{
+		color:#F60;
+		display:inline-block;
+		padding:3px 0px;/*khich thuoc cua backgound chi toi*/
+		text-decoration:none;
+	}
+	.category ul li a:hover{
+		background:rgb(48, 49, 122);
+	}
+.search{
+	margin: 10px;
+	height: auto;
+	margin-left: 70px;
+	
+}
+		#tk{
+			margin:10px;
+			padding: 5px;
+			height: 25px;
+			width: 500px;
+		}
+		#tknc{
+			margin:10px;
+			padding: 5px;
+			height: 40px;
+			width: 200px;
+		}
+#bt_search{
+	size: 30px;
+	height: 40px;
+	width: 70px;
+	margin: 30px;
+}
+.title{
+	border:1px solid #000;
+	margin: 10px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+.title a{
+		text-decoration: none;
+}
+.title a:hover {
+	color:#08bff7;
+	background-color: cyan;
+	text-decoration:underline;
+	}
+
+#chu{
+	padding-left: 40px;
+	float: left;
+	padding: 5px;
+}
+.ctcv{
+	padding: 10px;
+	margin: 20px;
+}
+#ct{
+	padding-left: 20px;
+}
+.ctcv ul{
+	padding-left: 60px;
+}
+.bottom{
+	padding: 5px;
+	margin: 10px;
+	padding-left: 50px;
+}

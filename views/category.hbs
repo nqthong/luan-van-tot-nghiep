@@ -1,0 +1,22 @@
+<div class="category">
+    <ul>
+        {{#each jobs}}
+            <li><a href="/category?category={{_id}}">{{this._id}}</a></li>
+        {{/each}}
+</ul>
+</div>
+<div class="search">
+    <form action="/tk" method="POST" style="float:left" >
+        <input id="tk" type="text" name="congviec" size="30"/>
+        <input type="submit" name="search" value="Search" id="bt_search" />
+    </form>
+    
+    <form action="/advanced_search">
+        <input type="submit" name="search" value="Advanced Search" id="bt_search" style="width: 150px"/>
+    </form>
+
+</div>
+<div class="content">
+
+    
+</div>

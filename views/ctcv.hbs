@@ -1,0 +1,32 @@
+<div class="search">
+    <form action="/tk" method="POST" >
+        <input id="tk" type="text" name="congviec" size="30"/>
+        <input type="submit" name="search" value="Search" id="bt_search"/>
+    </form>
+</div>
+<hr>
+{{#each jobs}}
+    <div class="ctcv">
+    <h2>{{this.title}}</h2>
+    <br>
+    <hr>
+    <br>    
+    <h4 style="padding-left: 30px;color:blue">Category: &nbsp;<a href="/category?category={{category2}} ">{{this.category2}}</a></h4><br>
+    <p id="chu" style="padding-right: 40px">Country: &nbsp;{{client.location.country}}</p>
+    <p id="chu" style="padding-right: 40px">Created On: &nbsp;{{createdOn}}</p>
+    <p id="ct" style="color:#f75408;size:40px">$$$:&nbsp;{{amount.amount}}&nbsp;{{amount.currencyCode}}</p> <br>
+    <br>
+    <h4>Skills:</h4> <hr>
+    <ul style="padding-right: 40px">
+        {{#each skills}}
+           <li>{{name}}</li> 
+            {{/each}}
+    </ul>
+    <br>
+    <h4>Description: </h5>
+    <hr>      
+           <p style="padding-left: 40px">{{description}}</p> 
+            <br>
+
+    </div>
+{{/each}}

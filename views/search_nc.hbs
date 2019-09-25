@@ -1,0 +1,23 @@
+<form action="/advanced_search" method="POST">
+  <center>
+    <input  type="text" placeholder="Search.." name="search" id="tk"/><br>
+
+  <select class="search"  name = "tprice" id="tknc">
+      <option value = "">(Price)</option>
+       <option value="price_1"> < 100 USD</option>
+       <option value="price_2">100-250 USD</option>
+       <option value="price_3">250 - 1000 USD</option>
+       <option value="price_4">1000 - 30000 USD</option>
+       <option value="price_5"> > 50000 USD</option>
+   </select>
+
+   <select name = "ttype" id="tknc" >
+     <option value = "">(Category)</option>
+     {{#each jobs}}
+      <option value="{{_id}}">{{_id}}</option>
+     {{/each}}
+   </select>
+
+   
+ <input type = "submit" value="Advanced Search" id="bt_search" style="width: 150px"/>
+ </form>
